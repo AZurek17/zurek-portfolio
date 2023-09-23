@@ -1,9 +1,6 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
     width: 100%;
     height: 100%;
@@ -14,20 +11,48 @@ header {
     height: 100%
 }
 
-.head {
-    display: flex;
+.header {
     justify-content: baseline;
     padding: 0%;
     align-items: center;
     background-color: aqua;
 }
 
+.about {
+    justify-content: baseline;
+    padding: 0;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.work { 
+    justify-content: baseline;
+    padding: 0%;
+    align-items: center;
+    background-color: brown;
+}
+
+.contact {
+    justify-content: baseline;
+    padding: 0%;
+    align-items: baseline;
+    background-color: burlywood;
+}
 .nav {
-    justify-content: end;
+    justify-content:right
+}
+/*
+#nav {
+
+}
+
+.footer {
+
+
 }
 
 .card  {
-    display: flex;
+    box-sizing: border-box;
     justify-content: center;
     padding: 0%;
     align-items: baseline;
