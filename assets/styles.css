@@ -1,92 +1,94 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
 }
+
 body {
     width: 100%;
     height: 100%;
 }
 
-header {
-    width: 100%;
-    height: 100%
+.head {
+    border: 2px solid;
+    justify-content:flex-start;
+    padding: 20px;
+    align-items: center;
+    background-color:yellow;
+    color:blue;
 }
 
-.header {
-    justify-content: baseline;
-    padding: 0%;
-    align-items: center;
-    background-color: aqua;
+.head nav {
+    padding top: 20px;
+    margin-right: 20px;
+    float: inline-end;
+}
+
+.devbox {
+    border: 2px solid;
+    width: 100%;
+    height: 200px;
+    color:green;
+    padding: 20px;
+
 }
 
 .about {
-    justify-content: baseline;
+    border: 2px solid;
+    width: 100%;
+    height: 400px;
     padding: 0;
     align-items: center;
     background-color: blueviolet;
 }
 
 .work { 
+    border: 2px solid;
     justify-content: baseline;
-    padding: 0%;
+    padding: 2%;
     align-items: center;
     background-color: brown;
 }
 
-.contact {
-    justify-content: baseline;
-    padding: 0%;
-    align-items: baseline;
-    background-color: burlywood;
-}
-.nav {
-    justify-content:right
-}
-/*
-#nav {
-
+.workprojects {
+    border-style: thick
 }
 
-.footer {
-
-
-}
-
-.card  {
-    box-sizing: border-box;
-    justify-content: center;
-    padding: 0%;
-    align-items: baseline;
-    background-color: blue;
-
-}
-.card-about {
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-    align-items: center;
-    background-color: blue;
-} 
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-    align-items: center;
-    background-color: blue;
-} 
-
-.contact {
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-    align-items: baseline;
-    background-color: blue;
-}
-
-.portfolio {
+.portfolio1 {
+    border: 2px solid;
     width: 200px;
-    height: 200px;
-    bottom margin: 20; 
+    height: 200px; 
+    background-color: white;
 }
 
+.portfolioimg-1 {
+    border-image: ;
+    float: none;
 
+
+}
+.portfolio2 {
+    border: 2px solid;
+    width: 200px;
+    height: 200px; 
+    background-color: red;
+}
+
+.portfolio3 {
+    border: 2px solid;
+    flex: auto;
+    width: 200px;
+    height: 200px; 
+    background-color: blue;
+}
+
+.contact {
+    border: 2px solid;
+    flex: auto;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+}
+.footer {
+    text-align: center;
+}
