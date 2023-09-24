@@ -85,21 +85,27 @@ main {
 }
 .skills .dev {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
     width: 50%;
 }
 .skills ul {
-    display: flexbox;
+    display: flex;
+    /* flex-direction: column; */
     /* position: absolute; */
     justify-content:center;
     /*text-align: left;*/
-    padding: 25px;
+    padding: 15px;
+    align-items: center;
+    list-style: none;
     /*justify-content: space-evenly;*/
     /* width: 100%;  */
-    height: 25%;
-    width: 25%;
+    /* height: 25%; */
+    /* width: 25%; */
 }
-
+.skills ul li {
+    padding: 15px;
+    
+}
  /* .about .skills ul {
     display: flex;
     position: absolute; 
@@ -119,9 +125,9 @@ main {
     text-align: left;
     }
 
-.text-right {
-        text-align: right;
-        }
+/* .text-right {
+    text-align: right;
+        } */
 
 .text-center {
     text-align: center;
@@ -143,34 +149,39 @@ main {
 
 .workprojects {
     display: flex;
-    position:relative;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position:relative; */
+    justify-content: space-evenly;
     border-style: thick;
     /* margin: 50px; */
-    padding: 50px;
+    padding: 15px;
     background-color: white;
     border: 25px solid;
 }
 
-.vpwork {
+/* .vpwork {
     display: flex;
-    /* position: absolute; */
+    flex-direction: column;
+    position: absolute; 
     justify-content: space-evenly;
     height: 800px;
     width: 100%;
-}
+} */
 
 .portfolio1 {
-    margin: 2px;
+    margin: 3px;
     border: 2px solid;
-    width: 300px;
-    height: 300px; 
-    background-color: white;
+    width: 350px;
+    height: 450px; 
+    /* background-color: white; */
+    box-shadow: 10px 20px black;
+    
 }
 
 .portfolioimg-1 {
-    border-image: ;
+    /* border-image: ;
     float: none; 
+     */
 
 }
 .portfolio2 {
@@ -178,12 +189,15 @@ main {
     border: 2px solid;
     width: 200px;
     height: 200px; 
-    background-color: red;
+    /* background-color: red; */
+    transform: rotate(15deg);
+    box-shadow: 5PX 10PX black;
+    
 }
 
 .portfolioimg-2 {
-    border-image: ;
-    float: none;
+    /* border-image: ; */
+    /* float: none; */
 }
 .portfolio3 {
     border: 2px solid;
@@ -193,6 +207,11 @@ main {
     background-color: blue;
 }
 
+.ptitle {
+    border: 2px soild !important; 
+    padding: 5px;
+    position: absolute;
+}
 .contact {
     position: relative;
     justify-content: space-evenly;
@@ -208,7 +227,7 @@ main {
     line-height: 5%;
 } */
 
-.contact-info div {
+.contact-info div{
     display: flex;
     position: absolute;
     justify-content: space-evenly;
@@ -216,16 +235,18 @@ main {
  
 .contact-info p a {
     display: flex;
-    position: absolute;
-    /* position: absolute; */
+    position: absolute; 
     text-align: left;
+    top:20px;
     justify-content: space-evenly;
     width: 100%;
     
 }
 .footer {
     text-align: center;
+
 }
+
 
 @media screen and (max-width: 982px) {
     
@@ -235,6 +256,7 @@ main {
      .head .nav {
         scale: 60%
     }
+
     /*s.head {
         display: flex;
         justify-content:first baseline;
@@ -259,7 +281,17 @@ main {
 
      .about .skills ul {
         height:auto;
+    }
+    .workprojects a {
+        /* display: flex; */
+        /* position: absolute; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 15px 0px;
+        /* height: 800px;
+        width: 100%; */
     } 
+    
 } 
 
 
