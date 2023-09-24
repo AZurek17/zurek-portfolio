@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0px;
+    /* border-style: dashed; */
 }
 
 body {
@@ -9,11 +10,15 @@ body {
     height: 100%;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
 .head {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
-    height: 150px;
+    height: 100px;
     align-items: center;
     background-color:black;
     color:white;
@@ -39,8 +44,9 @@ body {
     position: relative;
     border: 2px solid;
     width: 100%;
-    height: 800px;
-    background-attachment:local
+    height: 1500px;
+    background-color: black;
+    /* background-attachment:local */
 
 }
 .devimgbg {
@@ -48,19 +54,21 @@ body {
     /* position:absolute;
     float: none; */
     width: 100%;
-    height: 800px;
+    height: 1000px;
 }
 
 .devimg1 {
     /* float:inherit;  */
     position:absolute;
-    top: 65%;
+    top: 45%;
     /* bottom: 5px; */
-    left: 80%;
+    right: 3%;
     justify-content: left;
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-color: white;
+    border: 6px solid;
     z-index: 1;
     
 }
@@ -69,37 +77,87 @@ body {
     /* border: 2px solid; */
     position: relative;
     width: 100%;
-    height: 250px;
-    padding: 0;
+    height: 600px;
+    padding: 1%;
     text-align: center;
     background-color:black;
     color: white
 }
-
-.skills ul {
+.skills .dev {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;;
+    width: 50%;
+}
+.skills ul {
+    display: flexbox;
+    /* position: absolute; */
+    justify-content:center;
+    /*text-align: left;*/
+    padding: 25px;
+    /*justify-content: space-evenly;*/
+    /* width: 100%;  */
     height: 25%;
-    position: absolute;
+    width: 25%;
 }
 
-.text-index {
+ /* .about .skills ul {
+    display: flex;
+    position: absolute; 
+    justify-content: space-evenly ; 
+    justify-content: center;
     padding: 25px;
+    width: 25%;
+    height: 50%;
+ } */
+
+.text-index {
+    padding: 20px;
     text-align: left;
+}
+
+.text-left {
+    text-align: left;
+    }
+
+.text-right {
+        text-align: right;
+        }
+
+.text-center {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
 }
 .work { 
     position: relative;
     border: 2px solid;
     justify-content: baseline;
-    padding: 2%;
+    padding: .1%;
     align-items: center;
     background-color: white;
+    /* height: 800px;
+    width: 100%; */
 }
 
 .workprojects {
+    display: flex;
     position:relative;
-    border-style: thick
+    justify-content: space-between;
+    border-style: thick;
+    /* margin: 50px; */
+    padding: 50px;
+    background-color: white;
+    border: 25px solid;
+}
+
+.vpwork {
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-evenly;
+    height: 800px;
+    width: 100%;
 }
 
 .portfolio1 {
@@ -139,7 +197,7 @@ body {
     position: relative;
     justify-content: space-evenly;
     width: 100%;
-    height: 200px;
+    height: 125px;
     padding: 10px;
     background-color: black;
     color: white;
@@ -155,14 +213,16 @@ body {
     position: absolute;
     justify-content: space-evenly;
 }
-
-/* .contact-info ul {
+ 
+.contact-info p a {
     display: flex;
     position: absolute;
+    /* position: absolute; */
+    text-align: left;
     justify-content: space-evenly;
-    width: 100% */
+    width: 100%;
+    
 }
-
 .footer {
     text-align: center;
 }
@@ -172,10 +232,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    /* .head .nav {
-        float:column;
+     .head .nav {
+        scale: 60%
     }
-    .head {
+    /*s.head {
         display: flex;
         justify-content:first baseline;
         padding: 20px;
@@ -185,16 +245,19 @@ body {
         color:white;
     } */
     .devbox.devimgbg {
-        height: auto
+        scale: 60%;
+        /* height:50%;
+        width: 50; */
     }
 
     .devimg1 {
-        width: 100px;
-        height: 100px;
-        position: absolute;
+        scale: 60%;
+        /* width: 40%;
+        height: 40%;
+        position:absolute; */
     }
 
-     .about .skills up {
+     .about .skills ul {
         height:auto;
     } 
 } 
