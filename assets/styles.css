@@ -18,13 +18,14 @@ body {
     background-color:black;
     color:white;
 }
+
 .head-center {
     margin: 5px;
 }
 
 .head .nav {
-    float:bottom;
-    height: 500px;
+    /* float:bottom; */
+    height: 150px;
     width: 50%;
     padding-top: 15px;
     margin-right: 20px;
@@ -43,18 +44,19 @@ body {
 
 }
 .devimgbg {
-    display:flex;
-    float: none;
+    /* display:flex;  */
+    /* position:absolute;
+    float: none; */
     width: 100%;
     height: 800px;
 }
 
 .devimg1 {
-    /* float: none; */
-    position: absolute;
-    top: 60%;
-    bottom: 50px;
-    left: 75%;
+    /* float:inherit;  */
+    position:absolute;
+    top: 65%;
+    /* bottom: 5px; */
+    left: 80%;
     justify-content: left;
     width: 200px;
     height: 200px;
@@ -65,18 +67,26 @@ body {
 
 .about {
     /* border: 2px solid; */
+    position: relative;
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 0;
     text-align: center;
     background-color:black;
     color: white
 }
 
+.skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+}
+
 .text-index {
-    padding: 50px;
+    padding: 25px;
     text-align: left;
-    
 }
 .work { 
     position: relative;
@@ -88,15 +98,15 @@ body {
 }
 
 .workprojects {
-    position: absolute;
+    position:relative;
     border-style: thick
 }
 
 .portfolio1 {
     margin: 2px;
     border: 2px solid;
-    width: 200px;
-    height: 200px; 
+    width: 300px;
+    height: 300px; 
     background-color: white;
 }
 
@@ -126,13 +136,33 @@ body {
 }
 
 .contact {
-    /* border: 2px solid; */
-    flex: auto;
+    position: relative;
+    justify-content: space-evenly;
     width: 100%;
     height: 200px;
+    padding: 10px;
     background-color: black;
     color: white;
+    text-align: center;
 }
+
+/* .contact h1 {
+    line-height: 5%;
+} */
+
+.contact-info div {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+}
+
+/* .contact-info ul {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    width: 100% */
+}
+
 .footer {
     text-align: center;
 }
@@ -154,11 +184,21 @@ body {
         background-color:black;
         color:white;
     } */
-    /* .devimgbg {
-        height: 400px;
-        
-    } */
-}
+    .devbox.devimgbg {
+        height: auto
+    }
+
+    .devimg1 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+     .about .skills up {
+        height:auto;
+    } 
+} 
+
 
 
 @media screen and (max-width: 480px) {
