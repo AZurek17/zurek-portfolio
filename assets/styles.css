@@ -25,7 +25,6 @@ body, main {
 }
 
 .head .nav {
-    /* float:bottom; */
     height: 150px;
     width: 50%;
     padding-top: 15px;
@@ -40,11 +39,12 @@ body, main {
     position: relative;
     border: 2px solid;
     width: 100%;
-    height: 1300px;
+    height: 1400px;
     background-color: black;
 
 }
 .devimgbg {
+    position: relative;
     width: 100%;
     height: 1000px;
 }
@@ -65,7 +65,7 @@ body, main {
 .about {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 150px;
     padding: 15px;
     text-align: center;
     background-color:black;
@@ -80,11 +80,8 @@ body, main {
 
 .skills ul {
     display: flex;
-    /* flex-direction: column; */
-    /* position: absolute; */
     justify-content:left;
-    /*text-align: left;*/
-    padding: 15px;
+    padding: 10px;
     align-items: center;
     list-style: none;
 }
@@ -110,23 +107,26 @@ body, main {
     color: white;
 
 }
+.htags {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .work { 
     position: relative;
-    border: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     justify-content: baseline;
     padding: .1%;
     align-items: center;
-    /* height: 800px;
-    width: 100%; */
+
 }
 
 .workprojects {
     display: flex;
     flex-wrap: wrap;
-    /* position:relative; */
     justify-content: space-evenly;
-    border-style: thick;
-    /* margin: 50px; */
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     padding: 15px;
     background-color: rgb(18, 18, 58);
     border: 25px solid;
@@ -140,7 +140,6 @@ body, main {
     border: 2px solid;
     width: 450px;
     height: 550px; 
-    /* background-color: white; */
     box-shadow: 10px 20px black;
 }
 
@@ -150,7 +149,6 @@ body, main {
     width: 250px;
     height: 300px; 
     justify-content: center;
-    /* background-color: red; */
     box-shadow: 5PX 10PX black;
 }
 
@@ -163,14 +161,12 @@ h4.ptitle {
     padding: 5px;
     text-align: center;
     max-width: 200px;
-    /* text-align: center; */
     background-color: black;
     color: white;
     z-index: 1; */
 }
 
 h4.ptitle1 {
-    /* display:flex; */
     position: absolute;
     top: 10%;
     left: 30%;
@@ -187,8 +183,6 @@ h4.ptitle1 {
 .contact {
     position: relative;
     justify-content: space-evenly;
-    /* width: 100%;
-    height: 125px; */
     padding: 15px;
     background-color: black;
     color: white;
@@ -200,49 +194,50 @@ h4.ptitle1 {
 } 
 
 div.contact-info ul {
-    /*display: flex;
-    position: absolute; */
     padding: 15px;
     text-align: center;
     margin-top: 15px;
 } 
 
 footer {
+    border-top: 2px solid;
     text-align: center;
+    background-color: black;
+    color: white;
 
 }
 
 
 @media screen and (max-width: 982px) {
-    .head, .nav {
+    .nav, .devimg1{
         scale: 80%
     } 
 }
 
 @media screen and (max-width: 768px) {
-     .head, .nav, .devbox.devimgbg, .devimg1  {
+    .about .skills, .head-center, .devimg1, .htags {
         scale: 60%
+    } 
+    .devbox {
+        height: 1000px;
+    
     }
-
-     .about .skills ul {
-        height:auto;
+    .devimgbg {
+        height:50%;
     }
-    .workprojects a {
-        /* display: flex; */
-        /* position: absolute; */
+    .devimg1 {
+        top: 10%;
+        right: 1%;
+        width: 150px;
+        height: 150px;
+    }
+    .workprojects a, .nav, div .skills ul {
         flex-direction: column;
         flex-wrap: wrap;
         margin: 15px 0px;
-        /* height: 800px;
-        width: 100%; */
     } 
-    
+
+    div .skills ul li{
+    word-wrap: break-word;
+   }
 } 
-
-
-
-@media screen and (max-width: 480px) {
-    .head .nav, .devbox.devimgbg, .devimg1  {
-       scale: 40%
-    }
-}
