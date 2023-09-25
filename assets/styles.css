@@ -17,7 +17,7 @@ main {
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     height: 100px;
     align-items: center;
     background-color:black;
@@ -44,7 +44,7 @@ main {
     position: relative;
     border: 2px solid;
     width: 100%;
-    height: 1500px;
+    height: 1300px;
     background-color: black;
     /* background-attachment:local */
 
@@ -77,22 +77,23 @@ main {
     /* border: 2px solid; */
     position: relative;
     width: 100%;
-    height: 600px;
-    padding: 1%;
+    height: 100px;
+    padding: 15px;
     text-align: center;
     background-color:black;
     color: white
 }
-.skills .dev {
+.skills .div {
     display: flex;
-    justify-content: space-between;
+    justify-content: wrap;
     width: 50%;
+    text-align: left;
 }
 .skills ul {
     display: flex;
     /* flex-direction: column; */
     /* position: absolute; */
-    justify-content:center;
+    justify-content:left;
     /*text-align: left;*/
     padding: 15px;
     align-items: center;
@@ -142,7 +143,6 @@ main {
     justify-content: baseline;
     padding: .1%;
     align-items: center;
-    background-color: white;
     /* height: 800px;
     width: 100%; */
 }
@@ -155,7 +155,7 @@ main {
     border-style: thick;
     /* margin: 50px; */
     padding: 15px;
-    background-color: white;
+    background-color: rgb(18, 18, 58);
     border: 25px solid;
 }
 
@@ -171,8 +171,8 @@ main {
 .portfolio1 {
     margin: 3px;
     border: 2px solid;
-    width: 350px;
-    height: 450px; 
+    width: 450px;
+    height: 550px; 
     /* background-color: white; */
     box-shadow: 10px 20px black;
     
@@ -187,10 +187,10 @@ main {
 .portfolio2 {
     margin: 2px;
     border: 2px solid;
-    width: 200px;
-    height: 200px; 
+    width: 250px;
+    height: 300px; 
+    justify-content: center;
     /* background-color: red; */
-    transform: rotate(15deg);
     box-shadow: 5PX 10PX black;
     
 }
@@ -199,49 +199,74 @@ main {
     /* border-image: ; */
     /* float: none; */
 }
-.portfolio3 {
+
+/* .portfolio3 {
     border: 2px solid;
     flex: auto;
     width: 200px;
     height: 200px; 
     background-color: blue;
+} */
+
+ h4.ptitle {
+    /* display:flex; */
+    align-items: center;
+    border: 2px solid; 
+    padding: 5px;
+    text-align: center;
+    max-width: 125px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    z-index: 1; */
 }
 
-.ptitle {
-    border: 2px soild !important; 
+h4.ptitle1 {
+    /* display:flex; */
+    align-items: center;
+    border: 2px solid; 
     padding: 5px;
-    position: absolute;
-}
+    max-width: 100px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    }
+
 .contact {
     position: relative;
     justify-content: space-evenly;
-    width: 100%;
-    height: 125px;
-    padding: 10px;
+    /* width: 100%;
+    height: 125px; */
+    padding: 15px;
     background-color: black;
     color: white;
     text-align: center;
 }
 
-/* .contact h1 {
+.contact h1 {
     line-height: 5%;
-} */
+} 
 
-.contact-info div{
-    display: flex;
-    position: absolute;
-    justify-content: space-evenly;
-}
- 
-.contact-info p a {
+div.contact-info ul {
+    /*display: flex;
+    position: absolute; */
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+} 
+.
+ /*
+.contact-info p {
     display: flex;
     position: absolute; 
     text-align: left;
-    top:20px;
+    top:15px;
+    width: 50%;
     justify-content: space-evenly;
     width: 100%;
     
-}
+} */
 .footer {
     text-align: center;
 
