@@ -80,6 +80,7 @@ body, main {
 
 .skills ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content:left;
     padding: 10px;
     align-items: center;
@@ -108,7 +109,7 @@ body, main {
 
 }
 .htags {
-    font-size: 50px;
+    font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .work { 
@@ -196,7 +197,7 @@ h4.ptitle1 {
 div.contact-info ul {
     padding: 15px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 } 
 
 footer {
@@ -215,18 +216,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .about .skills, .head-center, .devimg1, .htags {
+    .head-center, .devimg1 {
         scale: 60%
     } 
     .devbox {
         height: 1000px;
-    
     }
     .devimgbg {
         height:50%;
     }
     .devimg1 {
-        top: 10%;
+        top: 15%;
         right: 1%;
         width: 150px;
         height: 150px;
@@ -235,9 +235,13 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         margin: 15px 0px;
-    } 
-
+    }
+    
     div .skills ul li{
     word-wrap: break-word;
+    font-size: 15px;
    }
+   .htags {
+    font-size: 25px;
 } 
+}
