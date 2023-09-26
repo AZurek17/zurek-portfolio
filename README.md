@@ -1,6 +1,6 @@
 # zurek-portfolio
 
-[Visit the Deployed Site](https://azurek17.github.io/html-access/)
+[Visit the Deployed Site](https://azurek17.github.io/zurek-portfolio/)
 
 ![Zurek-Portfolio](./images/project%202.png)
 
@@ -109,5 +109,5 @@ Example of code:
 <!-- code modifed for clarity  -->
 
 
-© 2023 github.com/AZurek17/html-access Confidential and Proprietary. All Rights Reserved.
+© 2023 github.com/AZurek17/zurek-porfolio Confidential and Proprietary. All Rights Reserved.
 
