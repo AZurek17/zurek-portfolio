@@ -108,6 +108,12 @@ Example of code:
     <a href="https://linkedin.com/in/andy-zurek-374bb9291" target="_blank">andy-zurek-374bb9291</a>
 <!-- code modifed for clarity  -->
 
+## Credits
 
+* Xpert Learning Assistant
+* Tutoring Session
+* CSS - https://www.w3schools.com/css/
+
+----------------------------------------------------------------------------------
 © 2023 github.com/AZurek17/zurek-porfolio Confidential and Proprietary. All Rights Reserved.
 
