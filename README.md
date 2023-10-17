@@ -2,7 +2,7 @@
 
 [Visit the Deployed Site](https://azurek17.github.io/zurek-portfolio/)
 
-![Zurek-Portfolio](./images/project%202.png)
+![Zurek-Portfolio](./images/Zurek%20Portfolio.png)
 
 ## Description
 
